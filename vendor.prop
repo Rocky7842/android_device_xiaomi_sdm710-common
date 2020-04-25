@@ -133,6 +133,9 @@ ro.crypto.dm_default_key.options_format.version=1
 ro.crypto.volume.metadata.method=dm-default-key
 ro.crypto.volume.options=::v1
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Display post-processing
 ro.vendor.display.cabl=2
 vendor.display.qdcm.mode_combine=1
