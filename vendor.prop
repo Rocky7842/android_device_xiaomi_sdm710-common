@@ -188,6 +188,9 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 sdm.debug.disable_inline_rotator=1
 sdm.debug.disable_inline_rotator_secure=1
 
+# HWUI
+ro.hwui.render_ahead=1
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
