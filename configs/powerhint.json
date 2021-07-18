@@ -5,6 +5,7 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
+        "1612800",
         "1209600"
       ],
       "DefaultIndex": 0,
@@ -26,6 +27,7 @@
       "Values": [
         "9999999",
         "2208000",
+        "1843200",
         "1363200"
       ],
       "DefaultIndex": 0,
@@ -675,7 +677,18 @@
       "PowerHint": "DISPLAY_INACTIVE",
       "Node": "TASchedtunePreferIdle",
       "Duration": 0,
-      "Value": "0"
+      "Value": "0"},
+    {
+      "PowerHint": "Flipendo",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 0,
+      "Value": "1612800"
+    },
+    {
+      "PowerHint": "Flipendo",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 0,
+      "Value": "1843200"
     }
   ]
 }
