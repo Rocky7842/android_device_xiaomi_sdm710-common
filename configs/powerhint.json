@@ -130,6 +130,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "CDCpuset",
+      "Path": "/dev/cpuset/camera-daemon/cpus",
+      "Values": [
+        "0-7",
+        "2-5"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "CPUBWHystTriggerCount",
       "Path": "/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count",
       "Values": [
@@ -406,6 +415,12 @@
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
+      "Node": "CDCpuset",
+      "Duration": 5000,
+      "Value": "0-7"
+    },
+    {
+      "PowerHint": "CAMERA_LAUNCH",
       "Node": "ForegroundCpuset",
       "Duration": 1000,
       "Value": "0-5"
@@ -448,6 +463,12 @@
     },
     {
       "PowerHint": "CAMERA_STREAMING_MID",
+      "Node": "CDCpuset",
+      "Duration": 0,
+      "Value": "0-7"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_MID",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
       "Value": "2208000"
@@ -463,6 +484,12 @@
       "Node": "CPUBWIOPercent",
       "Duration": 0,
       "Value": "80"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_HIGH",
+      "Node": "CDCpuset",
+      "Duration": 0,
+      "Value": "0-7"
     },
     {
       "PowerHint": "CAMERA_STREAMING_HIGH",
@@ -493,6 +520,12 @@
       "Node": "CPUBWHystLength",
       "Duration": 0,
       "Value": "0"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_LOW",
+      "Node": "CDCpuset",
+      "Duration": 0,
+      "Value": "0-7"
     },
     {
       "PowerHint": "CAMERA_STREAMING_LOW",
