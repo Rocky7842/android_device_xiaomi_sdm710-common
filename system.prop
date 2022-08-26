@@ -58,6 +58,7 @@ persist.vendor.dpm.feature=1
 ro.vendor.qti.va_aosp.support=1
 
 # Graphics
+debug.sf.enable_transaction_tracing=false
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
