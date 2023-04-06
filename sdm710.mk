@@ -121,6 +121,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator@1.0-service \
     gralloc.sdm710
 
+# Display ConfigStore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
     hwcomposer.sdm710
