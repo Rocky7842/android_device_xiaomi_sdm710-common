@@ -518,6 +518,7 @@ service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
 service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
     user root
+    task_profiles ServiceCapacityLow
     oneshot
 
 service ftmd /system/vendor/bin/ftmdaemon -n -dd
@@ -682,6 +683,7 @@ service vendor.cnss-daemon /system/vendor/bin/cnss-daemon -n -l
     user system
     group system inet net_admin wifi
     capabilities NET_ADMIN
+    task_profiles ServiceCapacityLow
 
 on property:sys.shutdown.requested=*
     write /sys/kernel/shutdown_wlan/shutdown 1
@@ -713,6 +715,7 @@ service loc_launcher /system/vendor/bin/loc_launcher
     class late_start
     user gps
     group gps
+    task_profiles ServiceCapacityLow
 
 service qcom-sh /vendor/bin/init.qcom.sh
     class late_start
@@ -759,6 +762,7 @@ service vendor.atfwd /vendor/bin/ATFWD-daemon
     class late_start
     user system
     group system radio
+    task_profiles ServiceCapacityLow
 
 service hostapd_fst /vendor/bin/hw/hostapd -dd -g /data/vendor/wifi/hostapd/global
     class main
@@ -933,6 +937,7 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
     group system
     disabled
+    task_profiles ServiceCapacityLow
     oneshot
 
 service vendor.hbtp /vendor/bin/hbtp_daemon
