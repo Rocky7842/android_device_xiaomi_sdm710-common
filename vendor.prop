@@ -1,17 +1,8 @@
 # Audio
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
-audio.offload.buffer.size.kb=32
-audio.offload.gapless.enabled=true
 audio.offload.min.duration.secs=30
 audio.offload.video=true
-audio.sys.noisy.broadcast.delay=600
-audio.sys.offload.pstimeout.secs=3
-persist.audio.button_jack.profile=volume
-persist.audio.button_jack.switch=0
-persist.audio.fluence.speaker=true
-persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicerec=false
 persist.vendor.audio.ambisonic.auto.profile=false
 persist.vendor.audio.ambisonic.capture=false
 persist.vendor.audio.avs.afe_api_version=2
@@ -26,8 +17,6 @@ persist.vendor.audio.ras.enabled=false
 persist.vendor.audio.ring.filter.mask=0
 persist.vendor.audio.spv3.enable=true
 persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
-ro.qc.sdk.audio.fluencetype=none
-ro.qc.sdk.audio.ssr=false
 ro.vendor.audio.game.effect=true
 ro.vendor.audio.ring.filter=true
 ro.vendor.audio.sdk.fluencetype=fluence
@@ -127,22 +116,13 @@ bluetooth.profile.pan.nap.enabled?=true
 bluetooth.profile.pan.panu.enabled?=true
 bluetooth.profile.pbap.server.enabled?=true
 bluetooth.profile.sap.server.enabled?=true
-bt.max.hfpclient.connections=1
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=false
-persist.vendor.bt.a2dp.mac_whitelist=false
-persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
 persist.vendor.bt.aac_frm_ctl.enabled=true
-persist.vendor.btsatck.absvolfeature=true
-persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
-persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.qcom.bluetooth.scram.enabled=true
 persist.vendor.qcom.bluetooth.soc=cherokee
 ro.bluetooth.a2dp_offload.supported=true
-ro.bluetooth.emb_wp_mode=true
-ro.bluetooth.wipower=true
 ro.vendor.bluetooth.wipower=false
-vendor.bluetooth.soc=cherokee
 vendor.qcom.bluetooth.soc=cherokee
 
 # CNE
@@ -154,11 +134,7 @@ ro.crypto.volume.metadata.method=dm-default-key
 ro.crypto.volume.options=::v1
 
 # Display post-processing
-ro.vendor.display.ad=1
-ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
-ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
 ro.vendor.display.cabl=2
-ro.vendor.display.sensortype=2
 vendor.display.qdcm.mode_combine=1
 
 # DPM
@@ -175,9 +151,7 @@ debug.egl.hw=0
 debug.hwui.skia_atrace_enabled=false
 debug.renderengine.backend=skiaglthreaded
 debug.sf.hw=0
-persist.demo.hdmirotationlock=false
 persist.sys.sf.native_mode=2
-renderthread.skia.reduceopstasksplitting=true
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
@@ -188,11 +162,6 @@ ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
-sdm.debug.disable_inline_rotator=1
-sdm.debug.disable_inline_rotator_secure=1
-
-# HWUI
-ro.hwui.render_ahead=1
 
 # IMS
 persist.dbg.volte_avail_ovr=1
@@ -201,7 +170,6 @@ persist.dbg.wfc_avail_ovr=1
 
 # Media
 debug.stagefright.omx_default_rank=0
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Netflix custom property
 ro.netflix.bsp_rev=Q670-14477-1
@@ -210,14 +178,7 @@ ro.netflix.bsp_rev=Q670-14477-1
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Radio
-persist.radio.NO_STAPA=1
-persist.radio.VT_CAM_INTERFACE=1
-persist.radio.VT_HYBRID_ENABLE=1
-persist.radio.charge_sar_control=false
-persist.radio.dynamic_sar=false
-persist.radio.modem_dynamic_sar_state=close
 persist.radio.multisim.config=dsds
-persist.radio.sar_sar_sensor=true
 persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.custom_ecc=1
@@ -228,7 +189,6 @@ persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.sib16_support=1
-ril.subscription.types=RUIM
 ro.telephony.default_cdma_sub=0
 ro.telephony.default_network=22,22
 ro.telephony.iwlan_operation_mode=legacy

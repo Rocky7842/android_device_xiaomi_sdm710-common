@@ -3,6 +3,8 @@ audio.deep_buffer.media=true
 audio.offload.buffer.size.kb=32
 audio.offload.gapless.enabled=true
 audio.offload.video=true
+audio.sys.noisy.broadcast.delay=600
+audio.sys.offload.pstimeout.secs=3
 persist.audio.button_jack.profile=volume
 persist.audio.button_jack.switch=0
 persist.audio.fluence.speaker=true
@@ -19,7 +21,8 @@ use.voice.path.for.pcm.voip=true
 # Bluetooth
 bt.max.hfpclient.connections=1
 persist.vendor.bt.a2dp.mac_whitelist=false
-persist.vendor.btsatck.absvolfeature=true
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
+persist.vendor.btstack.absvolfeature=true
 persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.btstack.enable.splita2dp=true
 ro.bluetooth.emb_wp_mode=true
@@ -42,6 +45,12 @@ ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.protected_contents=true
 
+# Display post-processing
+ro.vendor.display.ad=1
+ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
+ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
+ro.vendor.display.sensortype=2
+
 # DPM
 persist.vendor.dpm.feature=1
 
@@ -52,6 +61,10 @@ ro.vendor.qti.va_aosp.support=1
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
+persist.demo.hdmirotationlock=false
+renderthread.skia.reduceopstasksplitting=true
+sdm.debug.disable_inline_rotator=1
+sdm.debug.disable_inline_rotator_secure=1
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
@@ -68,8 +81,11 @@ persist.radio.NO_STAPA=1
 persist.radio.VT_CAM_INTERFACE=1
 persist.radio.VT_HYBRID_ENABLE=1
 persist.radio.apm_sim_not_pwdn=1
+persist.radio.charge_sar_control=false
 persist.radio.dynamic_sar=false
+persist.radio.modem_dynamic_sar_state=close
 persist.radio.multisim.config=dsds
+persist.radio.sar_sar_sensor=true
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.enable_temp_dds=true
