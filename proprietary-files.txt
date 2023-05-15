@@ -45,6 +45,10 @@ vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
+# Camera (GCAM required libs) - from Bonito SP2A.220505.008
+vendor/lib/lib_aion_buffer.so|a49aab8cb80f05b64c0c12a3970dba50d2dc4691
+vendor/lib64/lib_aion_buffer.so|3ab3ff99bff2b6f2884da2fc4b0cfa6d69e8e94b
+
 # CDSP
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc

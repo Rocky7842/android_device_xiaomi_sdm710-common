@@ -25,3 +25,4 @@ libalCFR.so
 libalhLDC.so
 libVDSuperPhotoAPI.so
 libarcsoft_high_dynamic_range.so
+lib_aion_buffer.so
