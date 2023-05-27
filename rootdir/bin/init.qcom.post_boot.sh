@@ -552,7 +552,7 @@ function configure_zram_parameters() {
     # For 512MB Go device, size = 384MB, set same for Non-Go.
     # For 1GB Go device, size = 768MB, set same for Non-Go.
     # For >=2GB Non-Go devices, size = 50% of RAM size. Limit the size to 4GB.
-    # And enable lz4 zram compression for Go targets.
+    # And enable zstd zram compression for targets.
 
     let RamSizeGB="( $MemTotal / 1048576 ) + 1"
     let zRamSizeMB="( $RamSizeGB * 1024 ) / 2"
@@ -564,7 +564,7 @@ function configure_zram_parameters() {
     fi
 
     if [ "$low_ram" == "true" ]; then
-        echo lz4 > /sys/block/zram0/comp_algorithm
+        echo zstd > /sys/block/zram0/comp_algorithm
     fi
 
     if [ -f /sys/block/zram0/disksize ]; then
