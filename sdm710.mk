@@ -385,6 +385,7 @@ PRODUCT_SOONG_NAMESPACES += \
 # Telephony
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
+    WifiOverlay \
     ims-ext-common \
     ims_ext_common.xml \
     libgui_shim \
