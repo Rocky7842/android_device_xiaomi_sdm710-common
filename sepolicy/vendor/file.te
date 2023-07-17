@@ -22,6 +22,10 @@ type proc_sysctl_schedboost, proc_type, fs_type;
 
 type proc_tp, proc_type, fs_type;
 
+type proc_wakelocks, fs_type;
+
+type public_adsprpcd_file, file_type;
+
 type sysfs_fingerprint, sysfs_type, fs_type;
 
 type sysfs_gps, sysfs_type, fs_type;

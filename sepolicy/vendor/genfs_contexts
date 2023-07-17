@@ -53,3 +53,6 @@ genfscon sysfs /touchpanel                            u:object_r:sysfs_touchpane
 
 # Wi-Fi
 genfscon debugfs /wlan0                               u:object_r:debugfs_wlan:s0
+
+# Battery stats
+genfscon proc /wakelocks                              u:object_r:proc_wakelocks:s0
