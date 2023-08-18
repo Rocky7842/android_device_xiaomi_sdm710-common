@@ -3008,7 +3008,7 @@ case "$target" in
       # configure governor settings for big cluster
       echo "schedutil" > /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
       echo 0 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/rate_limit_us
-      echo 1344000 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_freq
+      echo 1363200 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_freq
       echo 300000 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
 
       # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
