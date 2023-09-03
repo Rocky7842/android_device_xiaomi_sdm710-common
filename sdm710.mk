@@ -319,6 +319,10 @@ PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/flash_super_dummy.sh:install/bin/flash_super_dummy.sh
 
+# Fast Charge HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.fastcharge@1.0-service.qcom
+
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client

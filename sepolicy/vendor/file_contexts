@@ -97,3 +97,6 @@
 # WiFi
 /data/vendor/mac_addr(/.*)?                                             u:object_r:wifi_vendor_data_file:s0
 /vendor/bin/nv_mac                                                      u:object_r:wcnss_service_exec:s0
+
+# Fast Charge HAL
+/vendor/bin/hw/vendor\.lineage\.fastcharge@1\.0-service\.qcom u:object_r:hal_lineage_fastcharge_default_exec:s0
