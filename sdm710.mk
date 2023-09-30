@@ -152,6 +152,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor
 
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi
@@ -307,6 +311,10 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
+
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 
 # Perf
 PRODUCT_PACKAGES += \
