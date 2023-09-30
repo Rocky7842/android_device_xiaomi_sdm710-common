@@ -63,6 +63,10 @@ BOARD_HAS_QCA_FM_SOC := "cherokee"
 BOARD_HAVE_QCOM_FM := true
 endif
 
+# GApps
+WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
+
 # Jemalloc
 MALLOC_SVELTE_FOR_LIBC32 := true
 
