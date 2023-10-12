@@ -35,8 +35,9 @@ def AddImage(info, dir, basename, dest):
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (basename, dest))
 
 def OTA_InstallEnd(info):
-  info.script.Print("Patching firmware images...")
+  info.script.Print("Patching dtbo image unconditionally...")
   AddImage(info, "IMAGES", "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
+  info.script.Print("Patching vbmeta image unconditionally...")
   AddImage(info, "IMAGES", "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
   return
 
