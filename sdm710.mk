@@ -67,11 +67,15 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
+    libhdmiedid \
+    libhfp \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libtinycompress \
     libvolumelistener \
+    libsndmonitor \
+    libspkrprot \
     tinymix
 
 # Audio configs
