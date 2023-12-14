@@ -325,7 +325,6 @@ vendor/lib64/libgnsspps.so
 vendor/lib64/libgps.utils.so
 vendor/lib64/libizat_client_api.so
 vendor/lib64/libizat_core.so
-vendor/lib64/libjnihelper.so
 vendor/lib64/liblbs_core.so
 vendor/lib64/libloc_api_v02.so
 vendor/lib64/libloc_core.so
@@ -441,21 +440,6 @@ vendor/firmware/ipa_fws.mdt
 # IRQ balance
 vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf
-
-# Listen
-vendor/lib/hw/sound_trigger.primary.sdm710.so|849d2b2312db12a00f13a85a2fc5d2e71a121ffd
-vendor/lib/libadpcmdec.so
-vendor/lib/libcapiv2svacnn.so
-vendor/lib/libcapiv2vop.so
-vendor/lib/libgcs-calwrapper.so
-vendor/lib/libgcs-ipc.so
-vendor/lib/libgcs-osal.so
-vendor/lib/libgcs.so
-vendor/lib/libjnihelper.so
-vendor/lib/liblistensoundmodel2.so
-vendor/lib/libmulawdec.so
-vendor/lib/librice.so
-vendor/lib/libsmwrapper.so
 
 # Media
 vendor/lib/libmmosal.so
