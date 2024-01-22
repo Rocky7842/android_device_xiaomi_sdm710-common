@@ -199,7 +199,7 @@ ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
 
 # RCS
-persist.rcs.supported=0
+persist.rcs.supported=1
 
 # USB
 vendor.usb.diag.func.name=diag
