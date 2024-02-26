@@ -61,6 +61,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
+    audio.primary.sdm710 \
     audio.r_submix.default \
     audio.usb.default
 
