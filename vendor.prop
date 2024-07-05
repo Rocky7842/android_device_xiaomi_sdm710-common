@@ -181,7 +181,6 @@ ro.lmk.downgrade_pressure=60
 ro.lmk.kill_heaviest_task=true
 
 # Media
-debug.stagefright.omx_default_rank=0
 vendor.media.target.version=1
 vendor.sys.media.target.version=1
 
