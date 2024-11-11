@@ -20,6 +20,13 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/xiaomi/sdm710-common',
+    'hardware/qcom-caf/sdm845',
+    'hardware/qcom-caf/wlan',
+    'hardware/xiaomi',
+    'vendor/qcom/opensource/commonsys/display',
+    'vendor/qcom/opensource/commonsys-intf/display',
+    'vendor/qcom/opensource/dataservices',
+    'vendor/qcom/opensource/display',
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
