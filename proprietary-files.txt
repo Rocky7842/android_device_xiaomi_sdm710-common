@@ -225,7 +225,6 @@ vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
 # DRM (OEM Crypto API)
-vendor/lib64/libcpion.so
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtrustedapploader.so
