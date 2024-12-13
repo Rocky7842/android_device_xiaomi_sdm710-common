@@ -471,7 +471,6 @@ vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc
 vendor/lib64/libmfido.so
 vendor/lib64/libmt@1.2.so
 vendor/lib64/libwvkeybox.so
-vendor/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so
 
 # Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
