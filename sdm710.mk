@@ -135,7 +135,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
-    hwcomposer.sdm710
+    hwcomposer.qcom
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
