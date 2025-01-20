@@ -7,6 +7,7 @@
 #   - lowi-server
 #   - libcne
 #   - libwqe
+# libmt@1.2 depends on device specific keymaster lib
 
 # ADSP
 vendor/bin/adsprpcd
@@ -478,7 +479,7 @@ vendor/bin/mtd@1.2
 vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml
 vendor/lib64/libmfido.so
-vendor/lib64/libmt@1.2.so
+vendor/lib64/libmt@1.2.so;DISABLE_DEPS
 vendor/lib64/libwvkeybox.so
 
 # Neural networks
