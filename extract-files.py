@@ -80,6 +80,10 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/etc/data/dsi_config.xml',
         'vendor/etc/data/netmgr_config.xml',
     ): blob_fixup().fix_xml(),
+    (
+        'vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc',
+        'vendor/etc/init/vendor.qti.secure_element@1.0-service.rc',
+    ): blob_fixup().add_line_if_missing('    disabled'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
