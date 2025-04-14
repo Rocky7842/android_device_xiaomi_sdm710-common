@@ -80,10 +80,6 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/etc/data/dsi_config.xml',
         'vendor/etc/data/netmgr_config.xml',
     ): blob_fixup().fix_xml(),
-    (
-        'vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc',
-        'vendor/etc/init/vendor.qti.secure_element@1.0-service.rc',
-    ): blob_fixup().add_line_if_missing('    disabled'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
@@ -94,7 +90,9 @@ module = ExtractUtilsModule(
     namespace_imports=namespace_imports,
 )
 
-module.add_proprietary_file('proprietary-files-nfc.txt')
+module.add_proprietary_file('proprietary-files-nfc.txt').add_copy_files_guard(
+    'TARGET_HAS_NFC', 'true'
+)
 
 if __name__ == '__main__':
     utils = ExtractUtils.device(module)
