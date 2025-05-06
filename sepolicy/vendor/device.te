@@ -2,8 +2,6 @@ type fingerprint_device, dev_type;
 
 type gps_device, dev_type;
 
-type lirc_device, dev_type;
-
 type ultrasound_device, dev_type;
 
 # Treat non-super block devices as super block devices for retrofit
