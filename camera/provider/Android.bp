@@ -1,5 +1,5 @@
 cc_binary {
-    name: "android.hardware.camera.provider@2.4-service",
+    name: "android.hardware.camera.provider@2.4-service.sdm710",
     defaults: ["hidl_defaults"],
     proprietary: true,
     relative_install_path: "hw",
@@ -35,5 +35,5 @@ cc_binary {
         "camera.device@3.5-impl_headers",
     ],
     compile_multilib: "32",
-    init_rc: ["android.hardware.camera.provider@2.4-service.rc"],
+    init_rc: ["android.hardware.camera.provider@2.4-service.sdm710.rc"],
 }
