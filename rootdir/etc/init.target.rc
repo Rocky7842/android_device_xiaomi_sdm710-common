@@ -94,6 +94,11 @@ on post-fs-data
     chown system system /sys/class/drm/card0-DSI-1/dimlayer_hbm_enabled
     setprop persist.sys.sf.color_saturation 1.0
 
+on early-boot
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
+
 # For cpusets initialize for Silver Only first and then Silver + Gold
 # Silver Only configuration cannot work with 0-7
 on boot
