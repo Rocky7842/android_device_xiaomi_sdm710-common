@@ -185,6 +185,9 @@ PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
 $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
+$(call soong_config_set,lineage_health,fast_charge_node,/sys/class/qcom-battery/restricted_charging)
+$(call soong_config_set,lineage_health,fast_charge_value_none,1)
+$(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -248,10 +251,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/flash_super_dummy.sh:install/bin/flash_super_dummy.sh
-
-# Fast Charge HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.qcom
 
 # Partitions
 PRODUCT_PACKAGES += \

@@ -155,6 +155,9 @@ on boot
     setprop vendor.usb.dpl.inst.name "dpl"
     setprop vendor.usb.qdss.inst.name "qdss"
 
+    chown system system /sys/class/qcom-battery/restricted_charging
+    chmod 0660 /sys/class/qcom-battery/restricted_charging
+
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
