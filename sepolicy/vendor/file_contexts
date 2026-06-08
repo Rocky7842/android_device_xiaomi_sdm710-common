@@ -72,6 +72,13 @@
 # Thermal
 /data/vendor/thermal(/.*)?                                                                          u:object_r:vendor_thermal_data_file:s0
 
+# Torch
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:switch_0/brightness     u:object_r:sysfs_torch:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_0/brightness      u:object_r:sysfs_torch:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_0/max_brightness  u:object_r:sysfs_torch:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_1/brightness      u:object_r:sysfs_torch:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_1/max_brightness  u:object_r:sysfs_torch:s0
+
 # Ultrasound devices
 /dev/elliptic(.*)?                                                                                  u:object_r:ultrasound_device:s0
 /dev/mius(.*)?                                                                                      u:object_r:ultrasound_device:s0

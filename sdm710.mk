@@ -94,6 +94,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service.sdm710
 
+$(call soong_config_set,libcameraservice,ext_lib,//$(LOCAL_PATH):libcameraservice_extension.sdm710)
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore

@@ -201,9 +201,6 @@ on boot
     chown system system /sys/class/sensors/apds9930-proximity/poll_delay
 
     #add torch node for cit
-    chown system system /sys/class/leds/led:torch_0/brightness
-    chown system system /sys/class/leds/led:torch_1/brightness
-    chown system system /sys/class/leds/led:switch_0/brightness
     chown system system /sys/class/leds/led:torch_2/brightness
     chown system system /sys/class/leds/led:switch_1/brightness
     chown system system /sys/class/leds/flashlight/brightness

@@ -16,6 +16,8 @@ type sysfs_fingerprint, sysfs_type, fs_type;
 
 type sysfs_gps, sysfs_type, fs_type;
 
+type sysfs_torch, sysfs_type, fs_type;
+
 type sysfs_touchpanel, sysfs_type, fs_type;
 
 type vendor_audio_socket, file_type;
