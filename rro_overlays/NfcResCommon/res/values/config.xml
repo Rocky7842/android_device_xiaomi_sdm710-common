@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Set true if Secure NFC functionality supported for all SKUs -->
+    <bool name="enable_secure_nfc_support">true</bool>
+</resources>
